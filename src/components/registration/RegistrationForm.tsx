@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { toast } from "@/components/ui/sonner";
 import { Trash2, Check, ChevronsRight } from "lucide-react";
@@ -668,13 +667,21 @@ const RegistrationForm = () => {
                   </Button>
                 ) : (
                   <div className="w-full">
-                    <Button 
-                      component="label"
-                      className="btn btn-destructive btn-full"
-                    >
-                      Upload Proof of Transfer
-                      <input type="file" accept="image/*" hidden onChange={handleProof} />
-                    </Button>
+                    <label className="cursor-pointer w-full block">
+                      <Button 
+                        className="btn btn-destructive btn-full"
+                        onClick={() => document.getElementById('proofUploadInput')?.click()}
+                      >
+                        Upload Proof of Transfer
+                      </Button>
+                      <input 
+                        id="proofUploadInput"
+                        type="file" 
+                        accept="image/*" 
+                        hidden 
+                        onChange={handleProof} 
+                      />
+                    </label>
                     
                     {proofPreview && (
                       <div className="mt-3">
