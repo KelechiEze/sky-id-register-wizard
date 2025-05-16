@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import "./styles/registration.css"; // Import our updated CSS file
+import "./styles/RegistrationStyles.css"; // Updated to use RegistrationStyles.css
 
 const queryClient = new QueryClient();
 

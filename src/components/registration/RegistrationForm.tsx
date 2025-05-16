@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { toast } from "@/components/ui/sonner";
 import { Trash2, Check, ChevronsRight } from "lucide-react";
@@ -236,7 +237,7 @@ const RegistrationForm = () => {
   ];
 
   return (
-    <div className="registration-container">
+    <div className="registration-layout">
       {/* Sidebar with steps */}
       <div className="stepper-sidebar">
         <div className="logo-container">
