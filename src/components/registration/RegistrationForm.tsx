@@ -237,7 +237,7 @@ const RegistrationForm = () => {
   ];
 
   return (
-    <div className="registration-layout">
+    <div className="registration-container">
       {/* Sidebar with steps */}
       <div className="stepper-sidebar">
         <div className="logo-container">
